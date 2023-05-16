@@ -164,6 +164,15 @@ if(isset($_POST['simpan'])) {
             }
         })
     })
+  
+  $(document).ready(function() {
+    $('#dataTable').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [
+            'print'
+        ]
+    } );
+} );
 </script>
 
 

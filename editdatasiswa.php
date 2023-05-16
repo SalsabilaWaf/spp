@@ -131,7 +131,7 @@ if(isset($_POST['simpan'])) {
     $alamat = htmlentities(strip_tags($_POST['alamat']));
     $nisn = date['dmYHis'];
 
-    $query = "INSERT INTO siswa (nisn, nama_siswa, id_angkatan, id_jurusan, id_kelas, alamat) VALUES ('$nisn','$nama_siswa','$id_angkatan','$id_jurusan','$id_kelas','$alamat')";
+    $query = "INSERT INTO siswa (nisn, nama, id_angkatan, id_jurusan, id_kelas, alamat) VALUES ('$nisn','$nama_siswa','$id_angkatan','$id_jurusan','$id_kelas','$alamat')";
     $exec = mysqli_query($conn, $query);
     if($exec) {
         echo "<script>alert('Data siswa berhasil disimpan')
